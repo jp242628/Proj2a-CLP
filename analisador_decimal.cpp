@@ -1,10 +1,11 @@
+//Joao P S L P
 #include <iostream>
 #include <fstream>
 #include <string>
 
 using namespace std;
 
-// Função para verificar se uma palavra é reconhecida pela gramática
+// FunÃ§Ã£o para verificar se uma palavra Ã© reconhecida pela gramÃ¡tica
 bool verificarPalavra(const string& palavra) {
     char estado = 'p';
     for (char c : palavra) {
@@ -13,7 +14,7 @@ bool verificarPalavra(const string& palavra) {
                 if (c >= '0' && c <= '9')
                     estado = '1';
                 else
-                    return false; // Caractere inválido
+                    return false; // Caractere invÃ¡lido
                 break;
             case '1':
                 if (c >= '0' && c <= '9')
